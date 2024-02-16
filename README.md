@@ -48,6 +48,9 @@ El modelo de comentario (`Comment`) define la estructura de los comentarios, inc
 
 Al realizar una solicitud `POST /posts/:postId/comments`, se crea un nuevo comentario asociado a la publicación específica identificada por `:postId`. El servicio de comentarios genera un ID único para el comentario y lo almacena junto con el contenido del comentario y el ID de la publicación.
 
+## Tarea Sugerida
+Siguiendo los pasos del tutorial se puedo crear el proyecto propuesto y funcionó correctamente.
+
 ## Mejoras Futuras
 
 - [❌] Agregar autenticación y autorización para proteger las rutas y los recursos.
