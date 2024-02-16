@@ -110,7 +110,7 @@ Puedes probar la aplicación accediendo a `http://localhost:3000/posts` en tu na
 
 ## ¿Cómo se integran los conceptos de este tema?
 
-**Controladores y Servicios:** En el Paso 3 y Paso 4 del tutorial, se crean el controlador y el servicio respectivamente. El controlador se encuentra en el archivo `posts.controller.ts` y el servicio en posts.service.ts. El controlador maneja las solicitudes HTTP y delega la lógica de negocio al servicio.
+**Controladores y Servicios:** En el Paso 3 y Paso 4 del tutorial, se crean el controlador y el servicio respectivamente. El controlador se encuentra en el archivo `posts.controller.ts` y el servicio en `posts.service.ts`. El controlador maneja las solicitudes HTTP y delega la lógica de negocio al servicio.
 
 **Middleware:** Aunque el tutorial no menciona específicamente el uso de middleware, estos se podrían agregar en el archivo `app.module.ts` o en los controladores para ejecutar funciones antes o después de las solicitudes HTTP.
 
@@ -118,12 +118,7 @@ Puedes probar la aplicación accediendo a `http://localhost:3000/posts` en tu na
 
 **Decoradores:** En el tutorial, se utilizan varios decoradores de Nest.js. Por ejemplo, en el controlador `posts.controller.ts`, se utiliza el decorador `@Controller` para definir la clase como un controlador y `@Get` para definir un método de manejo de solicitudes GET.
 
-**Inyección de Dependencias: **En el Paso 5 del tutorial, se muestra cómo Nest.js utiliza la inyección de dependencias para proporcionar el servicio `PostsService` al controlador `PostsController` a través del módulo `PostsModule` en el archivo `posts.module.ts`.
-
-
-<centre>
+**Inyección de Dependencias:** En el Paso 5 del tutorial, se muestra cómo Nest.js utiliza la inyección de dependencias para proporcionar el servicio `PostsService` al controlador `PostsController` a través del módulo `PostsModule` en el archivo `posts.module.ts`.
 
 ¡Y eso es todo! Ahora tienes un proyecto básico de blog personal desarrollado con NestJS. Puedes seguir añadiendo funcionalidades como la creación, actualización y eliminación de publicaciones según tus necesidades.
-
-</centre>
 
