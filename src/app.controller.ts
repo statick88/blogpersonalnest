@@ -1,11 +1,11 @@
-// posts.controller.ts
+// app.controller.ts
 
 import { Controller, Get } from '@nestjs/common';
 
-@Controller('posts')
-export class PostsController {
+@Controller()
+export class AppController {
   @Get()
-  findAll(): string {
-    return 'This endpoint returns all posts';
+  getHello(): string {
+    return 'Hello World!';
   }
 }
