@@ -31,9 +31,18 @@ export class AuthService {
     username: string,
     password: string,
   ): Promise<boolean> {
-    // Lógica para verificar las credenciales del usuario
+    // Aquí debes implementar la lógica para verificar las credenciales del usuario
     // Esto puede implicar consultar una base de datos o un servicio externo
     // Devuelve true si las credenciales son válidas, de lo contrario false
-    return true; // Replace with your logic to validate the credentials
+    // Por ejemplo, puedes comparar las credenciales con un conjunto predefinido
+    // de credenciales almacenadas en algún lugar, como una base de datos.
+    // Esta es una implementación de ejemplo que verifica credenciales hardcoded.
+
+    // Verifica si las credenciales son válidas
+    const isValid = username === 'usuario' && password === 'contraseña';
+
+    // Devuelve true si las credenciales son válidas, de lo contrario, false
+    return isValid;
   }
+
 }
