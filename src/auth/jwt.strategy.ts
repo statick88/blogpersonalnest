@@ -1,9 +1,7 @@
-// src/auth/jwt.strategy.ts
-
-import { Strategy, ExtractJwt } from 'passport-jwt';
+import { Injectable } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
-import { Injectable, UnauthorizedException } from '@nestjs/common';
-import { jwtConstants } from './jwt.contrants';
+import { Strategy, ExtractJwt } from 'passport-jwt';
+import { jwtConstants } from './jwt.constants'; // Importa las constantes JWT
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
@@ -11,14 +9,11 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
-      secretOrKey: jwtConstants.secret,
+      secretOrKey: jwtConstants.secret, // Usa la clave secreta de las constantes JWT
     });
   }
 
   async validate(payload: any) {
-    // Aquí podrías realizar la validación adicional del token, como comprobar si el usuario aún existe en la base de datos
-    // Si la validación es exitosa, retorna el objeto del usuario
-    // De lo contrario, lanza una excepción UnauthorizedException
-    throw new UnauthorizedException();
+    return { username: payload.username };
   }
 }

@@ -1,3 +1,5 @@
+// posts.controller.ts
+
 import {
   Controller,
   Get,
@@ -9,9 +11,11 @@ import {
   NotFoundException,
   BadRequestException,
   InternalServerErrorException,
+  UseGuards,
 } from '@nestjs/common';
 import { PostsService } from './posts.service';
 import { Post as PostModel } from './post.model';
+import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 
 @Controller('posts')
 export class PostsController {
@@ -32,6 +36,7 @@ export class PostsController {
   }
 
   @Post()
+  @UseGuards(JwtAuthGuard) // Aplica el guardia JwtAuthGuard al método createPost
   async createPost(@Body() postData: PostModel): Promise<PostModel> {
     try {
       console.log('Received postData:', postData); // Agregar este registro de depuración
@@ -45,6 +50,7 @@ export class PostsController {
   }
 
   @Put(':id')
+  @UseGuards(JwtAuthGuard) // Aplica el guardia JwtAuthGuard al método updatePost
   async updatePost(
     @Param('id') id: string,
     @Body() postData: PostModel,
@@ -58,6 +64,7 @@ export class PostsController {
   }
 
   @Delete(':id')
+  @UseGuards(JwtAuthGuard) // Aplica el guardia JwtAuthGuard al método deletePost
   async deletePost(@Param('id') id: string): Promise<void> {
     return this.postsService.deletePost(id);
   }
