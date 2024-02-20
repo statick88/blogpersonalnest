@@ -12,7 +12,7 @@ getAllComments(postId: string): Comment[] {
 
 createComment(postId: string, author: string, content: string): Comment {
     const newComment: Comment = {
-        id: '1',
+        id: String(uuidv4()),
         postId,
         author,
         content,

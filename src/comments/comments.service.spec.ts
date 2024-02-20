@@ -16,5 +16,4 @@ describe('CommentsService', () => {
     expect(service).toBeDefined();
   });
 
-  // Aquí puedes agregar más pruebas para los métodos de tu servicio
 });
