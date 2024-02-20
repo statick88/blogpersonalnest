@@ -1,31 +1,37 @@
-import {
-  BadRequestException,
-  Injectable,
-  NotFoundException,
-} from '@nestjs/common';
+import { Injectable, BadRequestException, NotFoundException } from '@nestjs/common';
 import { v4 as uuidv4 } from 'uuid';
 import { Post } from './post.model';
+import { Comment } from '../comments/comment.model'; // Importa el modelo de comentarios
+import { CommentsService } from '../comments/comments.service'; // Importa el servicio de comentarios
 
 @Injectable()
 export class PostsService {
   private posts: Post[] = [];
 
-  constructor() {
+  constructor(private readonly commentsService: CommentsService) {
     // Agregar algunos posts de prueba al iniciar la aplicación
     this.createPost({
       id: uuidv4(),
       title: 'Post 1',
       content: 'Contenido del post 1',
+      comments: [
+        { id: uuidv4(), content: 'Primer comentario', createdAt: new Date() },
+        { id: uuidv4(), content: 'Segundo comentario', createdAt: new Date() },
+      ],
     });
     this.createPost({
       id: uuidv4(),
       title: 'Post 2',
       content: 'Contenido del post 2',
+      comments: [
+        { id: uuidv4(), content: 'Primer comentario', createdAt: new Date() },
+      ],
     });
     this.createPost({
       id: uuidv4(),
       title: 'Post 3',
       content: 'Contenido del post 3',
+      comments: [],
     });
   }
 
@@ -34,7 +40,12 @@ export class PostsService {
   }
 
   getPost(id: string): Post | undefined {
-    return this.posts.find((post) => post.id === id);
+    return this.posts.find((p) => p.id === id);
+  }
+
+  getComments(postId: string): Comment[] | undefined {
+    const post = this.getPost(postId);
+    return post?.comments;
   }
 
   createPost(postData: Post): Post {
@@ -43,13 +54,32 @@ export class PostsService {
     }
 
     const newPost: Post = {
-      id: uuidv4(),
+      id: postData.id,
       title: postData.title,
       content: postData.content,
+      comments: postData.comments || [],
     };
 
     this.posts.push(newPost);
     return newPost;
+  }
+
+  createComment(postId: string, commentData: Comment): Comment {
+    const post = this.getPost(postId);
+
+    if (!post) {
+      throw new NotFoundException('Post not found');
+    }
+
+    const newComment = this.commentsService.createComment(commentData);
+    post.comments = post.comments || [];
+    post.comments.push(newComment);
+    return newComment;
+  }
+
+  getComment(postId: string, commentId: string): Comment | undefined {
+    const post = this.getPost(postId);
+    return post?.comments?.find((comment) => comment.id === commentId);
   }
 
   updatePost(id: string, postData: Post): Post {

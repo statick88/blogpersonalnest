@@ -26,7 +26,7 @@ export class PostsController {
   async getPost(@Param('id') id: string): Promise<PostModel> {
     const post = await this.postsService.getPost(id);
     if (!post) {
-      throw new NotFoundException('Post not found');
+      throw new NotFoundException('Post no encontrado');
     }
     return post;
   }
