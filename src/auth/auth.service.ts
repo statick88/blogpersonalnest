@@ -1,3 +1,4 @@
+import { User } from './user.model';
 // auth.service.ts
 
 import { Injectable, UnauthorizedException } from '@nestjs/common';
@@ -26,14 +27,20 @@ export class AuthService {
 
     return { access_token: accessToken };
   }
-
+   arrayUsuarios: User[] = [
+    { username: "usuario1", password: "contrasena1" },
+    { username: "usuario2", password: "contrasena2" },
+    // Agrega más usuarios según sea necesario
+  ];
   async validateCredentials(
     username: string,
     password: string,
   ): Promise<boolean> {
-    // Lógica para verificar las credenciales del usuario
-    // Esto puede implicar consultar una base de datos o un servicio externo
-    // Devuelve true si las credenciales son válidas, de lo contrario false
-    return true; // Replace with your logic to validate the credentials
+    for (const user of this.arrayUsuarios) {
+      if (user.username === username && user.password === password) {
+        return true;
+      }
+    }
+    return false; // Replace with your logic to validate the credentials
   }
 }
