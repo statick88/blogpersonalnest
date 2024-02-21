@@ -1,8 +1,13 @@
+// src/app.module.ts
+
 import { Module } from '@nestjs/common';
-import { AuthModule } from './auth/auth.module';
-import { PostsModule } from './posts/posts.module'; // Importa el módulo de posts
+import { AuthModule } from './auth/auth.module'; // Asegúrate de importar el AuthModule
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
-  imports: [AuthModule, PostsModule], // Importa tanto el módulo de autenticación como el módulo de posts
+  imports: [AuthModule], // Asegúrate de incluir el AuthModule en los imports
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}

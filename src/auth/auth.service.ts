@@ -34,6 +34,6 @@ export class AuthService {
     // Lógica para verificar las credenciales del usuario
     // Esto puede implicar consultar una base de datos o un servicio externo
     // Devuelve true si las credenciales son válidas, de lo contrario false
-    return true; // Replace with your logic to validate the credentials
+    return true; // Reemplazar con tu lógica para validar las credenciales
   }
 }

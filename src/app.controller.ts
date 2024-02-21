@@ -1,11 +1,16 @@
-// app.controller.ts
+// posts.controller.ts
 
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, UseGuards } from '@nestjs/common';
+import { PostsService } from './posts/posts.service'; // Import the correct module
+import { AuthGuard } from '../src/auth/auth.guard'; // Importa el guardia de autenticación
 
-@Controller()
-export class AppController {
+@Controller('posts')
+export class PostsController {
+  constructor(private readonly postsService: PostsService) {}
+
   @Get()
-  getHello(): string {
-    return 'Hello World!';
+  @UseGuards(AuthGuard) // Aplica el guardia de autenticación al método GET
+  async getAllPosts(): Promise<any[]> {
+    return this.postsService.getAllPosts();
   }
 }
