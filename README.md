@@ -30,6 +30,8 @@ Este proyecto es un blog personal desarrollado utilizando el framework NestJS, q
 - NestJS
 - TypeScript
 - UUID
+- Docker
+- Docker Compose
 
 ## Instalación
 
@@ -38,7 +40,7 @@ Este proyecto es un blog personal desarrollado utilizando el framework NestJS, q
 
 ## Uso
 
-- Inicia el servidor de desarrollo: npm run start:dev
+- Inicia el servidor de desarrollo utilizando docker desktop: `docker compose up -d`
 - Realiza las peticiones HTTP utilizando tu herramienta favorita como Thunder Client.
 
 ## Endpoints
@@ -58,6 +60,8 @@ Debes obtener un token de acceso enviando una solicitud POST a `/auth/login` con
 ## Mejoras Futuras
 
 - [✅] Implementación de autenticación y autorización.
+- [✅] Implementación de Docker y Docker Compose.
+- [❌] Implementación de MongoDB para almacenar las publicaciones.
 - [❌] Implementación de comentarios en las publicaciones.
 - [❌] Mejorar la validación de datos en las solicitudes POST y PUT.
 
