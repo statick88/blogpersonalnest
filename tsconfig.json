@@ -20,6 +20,7 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "declarationDir": "./dist"
+    "declarationDir": "./dist",
+    "types": ["node", "mongoose"]
   }
 }
