@@ -22,7 +22,7 @@ Si deseas aprender a implementar autenticación en un blog personal con NestJS, 
 
 - [**Tutorial:** Desarrollo de Endpoints RESTful en Nest.js](/Tutoriales/tutorial-restful.md)
 
-<!-- - [**Tutorial:** Implementación de Pruebas Unitarias en un Blog Personal con Nest.js](/Tutoriales/tutorial-pruebas.md) --> -->
+<!-- - [**Tutorial:** Implementación de Pruebas Unitarias en un Blog Personal con Nest.js](/Tutoriales/tutorial-pruebas.md) -->
 
 
 
