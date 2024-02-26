@@ -29,7 +29,7 @@ Este es un proyecto de blog personal desarrollado con NestJS.
 
 ## Descripción
 
-<p style="text-align: justify">Este proyecto es un blog personal desarrollado utilizando el framework NestJS. Permite a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en publicaciones. La aplicación sigue una arquitectura modular y está diseñada siguiendo los principios de una API RESTful. </p>
+<p style="text-align: justify"> Este proyecto es un blog personal desarrollado utilizando el framework NestJS. Permite a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en publicaciones. La aplicación sigue una arquitectura modular y está diseñada siguiendo los principios de una API RESTful. </p>
 
 ## Funcionalidades
 
