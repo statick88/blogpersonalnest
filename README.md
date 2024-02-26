@@ -7,11 +7,11 @@ Este es un proyecto de blog personal desarrollado con NestJS.
 
 ## Sugerencia
 
-¡Antes de clonar o realizar un fork de este repositorio, te animamos a que intentes crear el proyecto desde cero siguiendo el tutorial!
+<p style="text-align: justify">¡Antes de clonar o realizar un fork de este repositorio, te animamos a que intentes crear el proyecto desde cero siguiendo el tutorial!</p>
 
 ## Tutorial
 
-Si deseas aprender a implementar autenticación en un blog personal con NestJS, te invitamos a seguir el tutorial en el siguiente enlace: 
+<p style="text-align: justify">Si deseas aprender a implementar autenticación en un blog personal con NestJS, te invitamos a seguir el tutorial en el siguiente enlace: </p> 
 
 - [**Tutorial:** Implementación de un Blog Personal con Nest.js](/Tutoriales/tutorial.md)
 
@@ -27,11 +27,9 @@ Si deseas aprender a implementar autenticación en un blog personal con NestJS, 
 
 <!-- - [**Tutorial:** Implementación de Pruebas Unitarias en un Blog Personal con Nest.js](/Tutoriales/tutorial-pruebas.md) -->
 
-
-
 ## Descripción
 
-Este proyecto es un blog personal desarrollado utilizando el framework NestJS. Permite a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en publicaciones. La aplicación sigue una arquitectura modular y está diseñada siguiendo los principios de una API RESTful.
+<p style="text-align: justify">Este proyecto es un blog personal desarrollado utilizando el framework NestJS. Permite a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en publicaciones. La aplicación sigue una arquitectura modular y está diseñada siguiendo los principios de una API RESTful. </p>
 
 ## Funcionalidades
 
@@ -86,7 +84,7 @@ Debes obtener un token de acceso enviando una solicitud POST a `/auth/login` con
 
 ## Contribuyendo
 
-¡Las contribuciones son bienvenidas! Si tienes alguna sugerencia, mejora o corrección, por favor crea un pull request.
+<p style="text-align: justify">¡Las contribuciones son bienvenidas! Si tienes alguna sugerencia, mejora o corrección, por favor crea un pull request.</p>
 
 ## Licencia
 
