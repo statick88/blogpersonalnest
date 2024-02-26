@@ -14,17 +14,15 @@ Si deseas aprender a implementar autenticación en un blog personal con NestJS, 
 
 - [**Tutorial:** Implementación de Autenticación en un Blog Personal con Nest.js](/Tutoriales/tutorial-auth.md)
 
-<!-- - [**Tutorial:** Implementación de Docker y Docker Compose en un Blog Personal con Nest.js](/Tutoriales/tutorial-docker.md) -->
+- [**Tutorial:** Implementación de Docker y Docker Compose en un Blog Personal con Nest.js](/Tutoriales/tutorial-docker.md)
 
 - [**Tutorial:** Implementación de MongoDB en un Blog Personal con Nest.js](/Tutoriales/tutorial-connection-database.md)
 
 - [**Tutorial:** Implementación de Peticiones Get, Post, Put, Delete](/Tutoriales/tutorial-peticiones.md)
 
-<!-- - [**Tutorial:** Implementación de Comentarios en un Blog Personal con Nest.js](/Tutoriales/tutorial-comentarios.md)
+- [**Tutorial:** Desarrollo de Endpoints RESTful en Nest.js](/Tutoriales/tutorial-restful.md)
 
-- [**Tutorial:** Mejora de la Validación de Datos en un Blog Personal con Nest.js](/Tutoriales/tutorial-validacion.md)
-
-- [**Tutorial:** Implementación de Pruebas Unitarias en un Blog Personal con Nest.js](/Tutoriales/tutorial-pruebas.md) -->
+<!-- - [**Tutorial:** Implementación de Pruebas Unitarias en un Blog Personal con Nest.js](/Tutoriales/tutorial-pruebas.md) --> -->
 
 
 

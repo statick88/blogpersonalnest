@@ -4,5 +4,5 @@
 db = db.getSiblingDB('mydatabase');
 
 // Crear las colecciones
-db.createCollection("users");
+db.createCollection('users');
 db.createCollection("posts");
