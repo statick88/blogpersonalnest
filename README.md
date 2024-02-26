@@ -78,7 +78,9 @@ Debes obtener un token de acceso enviando una solicitud POST a `/auth/login` con
 - [✅] Implementación de peticiones GET, POST, PUT, DELETE.
 - [❌] Implementación de comentarios en las publicaciones.
 - [❌] Mejorar la validación de datos en las solicitudes POST y PUT.
-
+- [❌] Implementación de pruebas unitarias y de integración.
+- [❌] Implementación de un front-end utilizando Angular, React o Vue.js.
+- 
 ## Contribuyendo
 
 ¡Las contribuciones son bienvenidas! Si tienes alguna sugerencia, mejora o corrección, por favor crea un pull request.
