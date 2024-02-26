@@ -72,12 +72,12 @@ Debes obtener un token de acceso enviando una solicitud POST a `/auth/login` con
 
 ## Mejoras Futuras
 
-  [✅] Implementación de autenticación y autorización.
-  [✅] Implementación de Docker y Docker Compose.
-  [✅] Implementación de MongoDB para almacenar las publicaciones.
-  [✅] Implementación de peticiones GET, POST, PUT, DELETE.
-  [❌] Implementación de comentarios en las publicaciones.
-  [❌] Mejorar la validación de datos en las solicitudes POST y PUT.
+- [✅] Implementación de autenticación y autorización.
+- [✅] Implementación de Docker y Docker Compose.
+- [✅] Implementación de MongoDB para almacenar las publicaciones.
+- [✅] Implementación de peticiones GET, POST, PUT, DELETE.
+- [❌] Implementación de comentarios en las publicaciones.
+- [❌] Mejorar la validación de datos en las solicitudes POST y PUT.
 
 ## Contribuyendo
 
