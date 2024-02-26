@@ -1,10 +1,7 @@
 # Blog Personal Nest
 
-<div align="center">
+![Blog Personal Nest](Tutoriales\image.png)
 
-  ![Blog Personal Nest](Tutoriales\image.png)
-
-</div>
 
 Este es un proyecto de blog personal desarrollado con NestJS.
 
