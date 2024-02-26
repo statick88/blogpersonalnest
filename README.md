@@ -1,6 +1,6 @@
 # Blog Personal Nest
 
-![Blog Personal Nest](Tutoriales\image.png)
+![Blog Personal Nest](img/image.png)
 
 
 Este es un proyecto de blog personal desarrollado con NestJS.
