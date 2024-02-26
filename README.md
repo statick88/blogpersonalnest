@@ -28,7 +28,7 @@ Si deseas aprender a implementar autenticación en un blog personal con NestJS, 
 
 ## Descripción
 
-Este proyecto es un blog personal desarrollado utilizando el framework NestJS, que permite a los usuarios crear, leer, actualizar y eliminar publicaciones. Utiliza una arquitectura modular y está diseñado siguiendo los principios de RESTful API.
+Este proyecto es un blog personal desarrollado utilizando el framework NestJS. Permite a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en publicaciones. La aplicación sigue una arquitectura modular y está diseñada siguiendo los principios de una API RESTful.
 
 ## Funcionalidades
 
@@ -44,10 +44,11 @@ Este proyecto es un blog personal desarrollado utilizando el framework NestJS, q
 - UUID
 - Docker
 - Docker Compose
+- MongoDB
 
 ## Instalación
 
-- Clona este repositorio: git clone https://github.com/statick88/blogpersonalnest
+- Clona este repositorio: git clone `https://github.com/statick88/blogpersonalnest`
 - Instala las dependencias: npm install
 
 ## Uso
@@ -63,20 +64,20 @@ Este proyecto es un blog personal desarrollado utilizando el framework NestJS, q
 - PUT /posts/:id: Actualizar una publicación existente
 - DELETE /posts/:id: Eliminar una publicación existente
 
-## Autenticación
+<!-- ## Autenticación
 
 Para proteger las rutas y los recursos, se ha implementado la autenticación mediante tokens JWT (JSON Web Tokens). 
 
-Debes obtener un token de acceso enviando una solicitud POST a `/auth/login` con las credenciales de usuario. Luego, incluye este token en la cabecera Authorization de tus solicitudes HTTP utilizando el esquema Bearer.
+Debes obtener un token de acceso enviando una solicitud POST a `/auth/login` con las credenciales de usuario. Luego, incluye este token en la cabecera Authorization de tus solicitudes HTTP utilizando el esquema Bearer. -->
 
 ## Mejoras Futuras
 
-- [✅] Implementación de autenticación y autorización.
-- [✅] Implementación de Docker y Docker Compose.
-- [❌] Implementación de MongoDB para almacenar las publicaciones.
-- [❌] Implementación de comentarios en las publicaciones.
-- [❌] Mejorar la validación de datos en las solicitudes POST y PUT.
-
+  [✅] Implementación de autenticación y autorización.
+  [✅] Implementación de Docker y Docker Compose.
+  [✅] Implementación de MongoDB para almacenar las publicaciones.
+  [✅] Implementación de peticiones GET, POST, PUT, DELETE.
+  [❌] Implementación de comentarios en las publicaciones.
+  [❌] Mejorar la validación de datos en las solicitudes POST y PUT.
 
 ## Contribuyendo
 
