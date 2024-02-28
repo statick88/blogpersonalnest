@@ -25,7 +25,7 @@ Este es un proyecto de blog personal desarrollado con NestJS.
 
 - [**Tutorial:** Desarrollo de Endpoints RESTful en Nest.js](/Tutoriales/tutorial-restful.md)
 
-<!-- - [**Tutorial:** Implementación de Pruebas Unitarias en un Blog Personal con Nest.js](/Tutoriales/tutorial-pruebas.md) -->
+- [**Tutorial:** Implementación de Pruebas Unitarias en un Blog Personal con Nest.js](/Tutoriales/tutorial-pruebas.md)
 
 ## Descripción
 
@@ -77,9 +77,9 @@ Debes obtener un token de acceso enviando una solicitud POST a `/auth/login` con
 - [✅] Implementación de Docker y Docker Compose.
 - [✅] Implementación de MongoDB para almacenar las publicaciones.
 - [✅] Implementación de peticiones GET, POST, PUT, DELETE.
+- [✅] Implementación de pruebas unitarias y de integración.
 - [❌] Implementación de comentarios en las publicaciones.
 - [❌] Mejorar la validación de datos en las solicitudes POST y PUT.
-- [❌] Implementación de pruebas unitarias y de integración.
 - [❌] Implementación de un front-end utilizando Angular, React o Vue.js.
 
 ## Contribuyendo
